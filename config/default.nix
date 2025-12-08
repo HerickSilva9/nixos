@@ -3,13 +3,13 @@
 {
   
   imports = [
-    # Diretórios
-    ./appimage
+  # Diretórios
+  # ./appimage
     ./browsers
-#    ./cloud-storage
+    ./cloud-storage
     ./development
     ./fonts
-#    ./gaming
+  # ./gaming
     ./kitty
     ./remote-desktop
 
