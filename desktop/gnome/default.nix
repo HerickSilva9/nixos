@@ -22,7 +22,18 @@
   services.desktopManager.gnome.enable = true;
 
   environment.systemPackages = with pkgs; [ 
-  gnome-tweaks  
+  gnome-tweaks
+  gnomeExtensions.dash-to-panel
+  gnomeExtensions.arcmenu
+  gnomeExtensions.appindicator
+  gnomeExtensions.user-themes
+  gnomeExtensions.desktop-cube
+  gnomeExtensions.burn-my-windows
+  gnomeExtensions.compiz-windows-effect
+  gnomeExtensions.compiz-alike-magic-lamp-effect
+  # gnomeExtensions.rounded-window-corners-reborn  # causa efeito "fantasma" ao mover janelas
+  papirus-icon-theme
+  # rewaita
   ];
 
   environment.gnome.excludePackages = with pkgs; [
@@ -44,6 +55,5 @@
   snapshot  # camera
   yelp  # help
   ];
-
 
 }
