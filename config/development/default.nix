@@ -7,7 +7,7 @@
   git
 
   # Python
-  # python3 python3Packages.pip python3Packages.virtualenv uv
+  python3 python3Packages.pip python3Packages.virtualenv uv
 
   # Rust
   # rustup
@@ -26,6 +26,6 @@
 
   ];
 
-  # programs.nix-ld.enable = true;
+  programs.nix-ld.enable = true;
 
 }
