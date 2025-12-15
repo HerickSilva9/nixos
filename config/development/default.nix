@@ -10,7 +10,7 @@
   python3 python3Packages.pip python3Packages.virtualenv uv
 
   # Rust
-  # rustup
+  rustup
 
   # Node.js
   # nodePackages_latest.nodejs
