@@ -11,7 +11,7 @@
       # Outros imports
       ./core/bootloader
       ./config
-      ./desktop/gnome
+      ./desktop/kde
       ./drivers/nvidia
       ./virtualisation
     ];
