@@ -8,10 +8,11 @@
     ./browsers
     ./cloud-storage
     ./development
-    ./fonts
     ./flake
+    ./fonts
   # ./gaming
     ./kitty
+    ./multimedia
     ./remote-desktop
 
     # Arquivos
