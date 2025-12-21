@@ -30,6 +30,7 @@
  
   environment.sessionVariables = {
     LD_LIBRARY_PATH = "$NIX_LD_LIBRARY_PATH";
+    PATH = "$HOME/.cargo/bin";
   };
 
 }
