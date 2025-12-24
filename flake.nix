@@ -14,10 +14,13 @@
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     # The host with the name `nixos` will use this configuration
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+
+
+      pc = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+          ./hosts/pc/hardware-configuration.nix
 
           home-manager.nixosModules.home-manager
           {
@@ -31,6 +34,26 @@
 
         ];
       };
+
+      laptop = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./configuration.nix
+          ./hosts/laptop/hardware-configuration.nix
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.herick = ./home.nix;
+              backupFileExtension = "backup";
+            };
+          }
+
+        ];
+      };
+
     };
   };
 

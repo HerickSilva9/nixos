@@ -4,7 +4,6 @@
 
   imports = [
     ./bootloader
-    ./hardware-configuration.nix
   ];
 
   # Enable swap memory.
