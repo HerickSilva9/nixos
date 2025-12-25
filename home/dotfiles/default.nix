@@ -2,6 +2,9 @@
 
 {
 
+  # Git
+  home.file.".gitconfig".source = config.lib.file.mkOutOfStoreSymlink "/home/herick/nixos/home/dotfiles/git/.gitconfig";
+
   # Kitty
   home.file.".config/kitty".source = config.lib.file.mkOutOfStoreSymlink "/home/herick/nixos/home/dotfiles/kitty";
 
