@@ -1,11 +1,14 @@
-{ config, pkgs, ...}:
+{ config, lib, pkgs, ...}:
 
 {
 
+  # Kitty
+  home.file.".config/kitty".source = config.lib.file.mkOutOfStoreSymlink "/home/herick/nixos/home/dotfiles/kitty";
+
   # user-dirs
   home.file = {
-      ".config/user-dirs.conf".source = ./user-dirs/user-dirs.conf;
-      ".config/user-dirs.dirs".source = ./user-dirs/user-dirs.dirs;
+      ".config/user-dirs.conf".source = config.lib.file.mkOutOfStoreSymlink "/home/herick/nixos/home/dotfiles/user-dirs/user-dirs.conf";
+      ".config/user-dirs.dirs".source = config.lib.file.mkOutOfStoreSymlink "/home/herick/nixos/home/dotfiles/user-dirs/user-dirs.dirs";
   };
 
 }

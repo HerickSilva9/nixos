@@ -27,7 +27,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.herick = ./home.nix;
+              users.herick = ./home/home.nix;
               backupFileExtension = "backup";
             };
           }
@@ -46,7 +46,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.herick = ./home.nix;
+              users.herick = ./home/home.nix;
               backupFileExtension = "backup";
             };
           }
