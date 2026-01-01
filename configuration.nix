@@ -10,7 +10,6 @@
       ./core
       ./config
       ./desktop/kde
-      ./drivers/nvidia
       ./virtualisation
     ];
 
