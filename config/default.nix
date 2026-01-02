@@ -15,6 +15,7 @@
     ./kitty
     ./multimedia
     ./remote-desktop
+    ./security
 
     # Arquivos
     ./common.nix
