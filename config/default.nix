@@ -14,6 +14,7 @@
     ./home-manager
     ./kitty
     ./multimedia
+    ./office
     ./remote-desktop
     ./security
 
