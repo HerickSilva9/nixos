@@ -1,0 +1,34 @@
+{ config, ...}:
+
+let
+
+  home = "${config.home.homeDirectory}";
+  mkOutOfStore = config.lib.file.mkOutOfStoreSymlink;
+  home-kde = "${home}/nixos/desktop/kde/home-kde";
+
+in
+
+{
+
+  # kde
+  home.file = {
+
+    # Folders
+    ".config/dconf".source = mkOutOfStore "${home-kde}/config/dconf";
+    ".config/gtk-3.0".source = mkOutOfStore "${home-kde}/config/gtk-3.0";
+    ".config/gtk-4.0".source = mkOutOfStore "${home-kde}/config/gtk-4.0";
+    ".config/kdedefaults".source = mkOutOfStore "${home-kde}/config/kdedefaults";
+    ".config/xsettingsd".source = mkOutOfStore "${home-kde}/config/xsettingsd";
+
+    # Files
+    ".gtkrc-2.0".source = mkOutOfStore "${home-kde}/.gtkrc-2.0";
+    ".config/gtkrc".source = mkOutOfStore "${home-kde}/config/gtkrc";
+    ".config/gtkrc-2.0".source = mkOutOfStore "${home-kde}/config/gtkrc-2.0";
+    ".config/kcminputrc".source = mkOutOfStore "${home-kde}/config/kcminputrc";
+    ".config/kdeglobals".source = mkOutOfStore "${home-kde}/config/kdeglobals";
+    ".config/kwinrc".source = mkOutOfStore "${home-kde}/config/kwinrc";
+    ".config/plasma-org.kde.plasma.desktop-appletsrc".source = mkOutOfStore "${home-kde}/config/plasma-org.kde.plasma.desktop-appletsrc";
+    ".config/Trolltech.conf".source = mkOutOfStore "${home-kde}/config/Trolltech.conf";    
+  };
+
+}

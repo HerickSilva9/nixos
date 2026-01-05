@@ -24,4 +24,8 @@ in
       ".config/user-dirs.dirs".source = mkOutOfStore "${home}/nixos/home/dotfiles/user-dirs/user-dirs.dirs";
   };
 
+  imports = [
+    ../../desktop/kde/home-kde  # KDE Plasma
+  ];
+
 }
