@@ -12,4 +12,8 @@
     size = 8 * 1024;
   }];
 
+  boot.kernelParams = [
+    "quiet" "loglevel=3"
+  ];
+
 }
