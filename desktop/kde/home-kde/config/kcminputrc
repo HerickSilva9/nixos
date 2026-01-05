@@ -1,2 +1,8 @@
+[Libinput][1003][8552][ATML3000:00 03EB:2168 Mouse]
+NaturalScroll=true
+
+[Libinput][1003][8552][ATML3000:00 03EB:2168 Touchpad]
+NaturalScroll=true
+
 [Mouse]
 cursorTheme=Breeze_Light
