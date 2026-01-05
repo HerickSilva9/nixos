@@ -19,7 +19,7 @@ in
   home.file.".config/nvim".source = mkOutOfStore "${home}/nixos/home/dotfiles/nvim";
 
   # Remmina
-  home.file.".local/share/remmina".source = mkOutOfStore "${home}/nixos/dotfiles/remmina";
+  home.file.".local/share/remmina".source = mkOutOfStore "${home}/nixos/home/dotfiles/remmina";
 
   # user-dirs
   home.file = {
