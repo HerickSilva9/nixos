@@ -1,0 +1,22 @@
+MenuBar=Disabled
+
+[ContextMenu]
+ShowCopyMoveMenu=true
+
+[DetailsMode]
+PreviewSize=32
+
+[General]
+BrowseThroughArchives=true
+Version=202
+ViewPropsTimestamp=2026,1,4,12,13,40.016
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[PreviewSettings]
+Plugins=appimagethumbnail,cursorthumbnail,fontthumbnail,textthumbnail,ffmpegthumbs,audiothumbnail,djvuthumbnail,blenderthumbnail,mobithumbnail,gsthumbnail,rawthumbnail,comicbookthumbnail,opendocumentthumbnail,kraorathumbnail,ebookthumbnail,windowsexethumbnail,imagethumbnail,windowsimagethumbnail,exrthumbnail,jpegthumbnail,svgthumbnail,directorythumbnail
+
+[UiSettings]
+ColorScheme=CatppuccinFrappeBlue

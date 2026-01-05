@@ -22,6 +22,7 @@ in
 
     # Files
     ".gtkrc-2.0".source = mkOutOfStore "${home-kde}/.gtkrc-2.0";
+    ".config/dolphinrc".source = mkOutOfStore "${home-kde}/config/dolphinrc";
     ".config/gtkrc".source = mkOutOfStore "${home-kde}/config/gtkrc";
     ".config/gtkrc-2.0".source = mkOutOfStore "${home-kde}/config/gtkrc-2.0";
     ".config/kcminputrc".source = mkOutOfStore "${home-kde}/config/kcminputrc";
