@@ -3,7 +3,8 @@
 {
   
   environment.systemPackages = with pkgs; [
-    libreoffice-qt-fresh
+    # libreoffice-qt-fresh
+    onlyoffice-desktopeditors
   ];
 
 }
