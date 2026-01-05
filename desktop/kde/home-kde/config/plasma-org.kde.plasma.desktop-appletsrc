@@ -15,6 +15,10 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][1][Wallpaper][org.kde.image][General]
+Image=file:///home/herick/imagens/walls-catppuccin-mocha/astronaut.png
+SlidePaths=/nix/store/13qls5cfwlc5h5qw13anpixc1y3aqfx3-breeze-6.5.4/share/wallpapers/,/run/current-system/sw/share/wallpapers/
+
 [Containments][2]
 activityId=
 formfactor=2
@@ -38,6 +42,10 @@ fontWeight=400
 [Containments][2][Applets][21]
 immutability=1
 plugin=org.kde.plasma.showdesktop
+
+[Containments][2][Applets][21][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
 
 [Containments][2][Applets][3]
 immutability=1
@@ -89,6 +97,9 @@ plugin=org.kde.plasma.notifications
 [Containments][2][Applets][7][Applets][13]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
+
+[Containments][2][Applets][7][Applets][13][Configuration]
+PreloadWeight=55
 
 [Containments][2][Applets][7][Applets][14]
 immutability=1

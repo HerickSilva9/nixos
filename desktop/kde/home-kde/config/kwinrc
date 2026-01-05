@@ -3,6 +3,9 @@ Id_1=59e12f4b-a93b-42f6-8428-e9913e3e5865
 Number=1
 Rows=1
 
+[Plugins]
+wobblywindowsEnabled=true
+
 [Tiling]
 padding=4
 
