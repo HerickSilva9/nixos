@@ -40,6 +40,7 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+	        ./drivers/intel
           ./hosts/laptop/hardware-configuration.nix
 
           home-manager.nixosModules.home-manager
