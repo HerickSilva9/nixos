@@ -19,6 +19,7 @@ in
     ".config/gtk-4.0".source = mkOutOfStore "${home-kde}/config/gtk-4.0";
     ".config/kdedefaults".source = mkOutOfStore "${home-kde}/config/kdedefaults";
     ".config/xsettingsd".source = mkOutOfStore "${home-kde}/config/xsettingsd";
+    ".local/share/remmina".source = mkOutOfStore "${home-kde}/local/remmina";
 
     # Files
     ".gtkrc-2.0".source = mkOutOfStore "${home-kde}/.gtkrc-2.0";
