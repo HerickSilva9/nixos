@@ -7,7 +7,15 @@
   git
 
   # Python
-  python3 python3Packages.pip python3Packages.virtualenv uv
+  # python3 python3Packages.tkinter python3Packages.pip python3Packages.virtualenv uv
+  (python3.withPackages (ps: with ps; [
+    pip
+    virtualenv
+    tkinter
+    pyqt5
+  ]))
+  uv
+  kdePackages.kdialog
 
   # Rust
   rustup
