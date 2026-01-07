@@ -14,6 +14,7 @@ in
   home.file = {
 
     # Folders
+    ".config/autostart".source = mkOutOfStore "${home-kde}/config/autostart";
     ".config/dconf".source = mkOutOfStore "${home-kde}/config/dconf";
     ".config/gtk-3.0".source = mkOutOfStore "${home-kde}/config/gtk-3.0";
     ".config/gtk-4.0".source = mkOutOfStore "${home-kde}/config/gtk-4.0";
@@ -22,7 +23,7 @@ in
     ".local/share/remmina".source = mkOutOfStore "${home-kde}/local/remmina";
 
     # Files
-    ".gtkrc-2.0".source = mkOutOfStore "${home-kde}/.gtkrc-2.0";
+    # ".gtkrc-2.0".source = mkOutOfStore "${home-kde}/.gtkrc-2.0";
     ".config/dolphinrc".source = mkOutOfStore "${home-kde}/config/dolphinrc";
     ".config/gtkrc".source = mkOutOfStore "${home-kde}/config/gtkrc";
     ".config/gtkrc-2.0".source = mkOutOfStore "${home-kde}/config/gtkrc-2.0";
@@ -32,5 +33,7 @@ in
     ".config/plasma-org.kde.plasma.desktop-appletsrc".source = mkOutOfStore "${home-kde}/config/plasma-org.kde.plasma.desktop-appletsrc";
     ".config/Trolltech.conf".source = mkOutOfStore "${home-kde}/config/Trolltech.conf";    
   };
+
+  home.file.".gtkrc-2.0" = { source = mkOutOfStore "${home-kde}/.gtkrc-2.0"; force = true; };
 
 }
