@@ -4,21 +4,22 @@
 
   environment.systemPackages = with pkgs; [
 
+  # Git
   git
 
   # Python
-  # python3 python3Packages.tkinter python3Packages.pip python3Packages.virtualenv uv
-  (python3.withPackages (ps: with ps; [
+  (python313.withPackages (ps: with ps; [
     pip
     virtualenv
-    tkinter
-    pyqt5
+    # tkinter pyqt5
   ]))
   uv
-  kdePackages.kdialog
+  # python3 python3Packages.tkinter python3Packages.pip python3Packages.virtualenv uv
+  # kdePackages.kdialog
 
   # Rust
   rustup
+  ## xorg.libX11 xorg.libXrandr xorg.libXi wayland libxkbcommon mesa libGL libx11
 
   # Node.js
   # nodePackages_latest.nodejs
