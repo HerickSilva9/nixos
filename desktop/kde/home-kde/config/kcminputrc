@@ -5,4 +5,6 @@ NaturalScroll=true
 NaturalScroll=true
 
 [Mouse]
+X11LibInputXAccelProfileFlat=true
+XLbInptNaturalScroll=true
 cursorTheme=Breeze_Light

@@ -33,7 +33,8 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][20][Configuration]
-popupHeight=400
+PreloadWeight=60
+popupHeight=451
 popupWidth=560
 
 [Containments][2][Applets][20][Configuration][Appearance]
@@ -56,8 +57,14 @@ PreloadWeight=100
 popupHeight=521
 popupWidth=629
 
+[Containments][2][Applets][3][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
+icon=distributor-logo-nixos
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][2][Applets][4]
 immutability=1
@@ -66,6 +73,11 @@ plugin=org.kde.plasma.pager
 [Containments][2][Applets][5]
 immutability=1
 plugin=org.kde.plasma.icontasks
+
+[Containments][2][Applets][5][Configuration][General]
+groupingAppIdBlacklist=google-chrome.desktop
+groupingLauncherUrlBlacklist=applications:google-chrome.desktop
+launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser,file:///nix/store/1rgdzwzd4x6pg5qwm62fv73yrz3w7i7p-system-path/share/applications/kitty.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -94,12 +106,15 @@ plugin=org.kde.plasma.keyboardlayout
 immutability=1
 plugin=org.kde.plasma.notifications
 
+[Containments][2][Applets][7][Applets][12][Configuration]
+PreloadWeight=65
+
 [Containments][2][Applets][7][Applets][13]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][2][Applets][7][Applets][13][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 
 [Containments][2][Applets][7][Applets][14]
 immutability=1
@@ -135,12 +150,22 @@ migrated=true
 immutability=1
 plugin=org.kde.plasma.battery
 
+[Containments][2][Applets][7][Applets][22][Configuration]
+PreloadWeight=44
+
 [Containments][2][Applets][7][Applets][23]
 immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][2][Applets][7][Applets][23][Configuration]
-PreloadWeight=60
+PreloadWeight=49
+
+[Containments][2][Applets][7][Applets][24]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][2][Applets][7][Applets][24][Configuration]
+PreloadWeight=18
 
 [Containments][2][Applets][7][Applets][8]
 immutability=1
