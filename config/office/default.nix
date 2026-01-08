@@ -4,7 +4,8 @@
   
   environment.systemPackages = with pkgs; [
     # libreoffice-qt-fresh
-    onlyoffice-desktopeditors
+    # onlyoffice-desktopeditors
+    # gnumeric
   ];
 
 }
