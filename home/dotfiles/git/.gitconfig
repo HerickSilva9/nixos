@@ -3,3 +3,5 @@
 	email = 149031628+HerickSilva9@users.noreply.github.com
 [init]
 	defaultBranch = main
+[credential]
+	helper = libsecret
