@@ -9,6 +9,7 @@
     ./cloud-storage
     ./development
     ./flake
+    ./flatpak
     ./fonts
     ./gaming
     ./home-manager
