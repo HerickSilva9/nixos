@@ -33,6 +33,9 @@
   # Zed
   # zed-editor
 
+  # IDE for writing GNOME-based software
+  gnome-builder
+
   ];
 
   programs.nix-ld.enable = true;
