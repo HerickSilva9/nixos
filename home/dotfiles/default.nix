@@ -9,6 +9,9 @@ in
 
 {
 
+  # direnv
+  home.file.".config/direnv/direnvrc".source = mkOutOfStore "${home}/nixos/home/dotfiles/direnv/direnvrc";
+
   # Git
   home.file.".gitconfig".source = mkOutOfStore "${home}/nixos/home/dotfiles/git/.gitconfig";
 
