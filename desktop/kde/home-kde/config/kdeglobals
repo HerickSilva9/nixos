@@ -120,6 +120,9 @@ ForegroundVisited=202, 158, 230
 
 [General]
 ColorSchemeHash=d9b3f338b5f1fd4e3389cb52a430776ddde2db0c
+TerminalApplication=kitty
+TerminalService=kitty.desktop
+UseSystemBell=true
 
 [Icons]
 Theme=Papirus
