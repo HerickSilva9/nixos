@@ -4,7 +4,7 @@
 
 environment.systemPackages = with pkgs; [
     obs-studio
-    # vlc
+    vlc
   ];
 
 }

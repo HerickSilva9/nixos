@@ -11,6 +11,7 @@ environment.systemPackages = with pkgs; [
     tree
     zip unzip
     bat
+    element-desktop
   ];
 
   nix.gc = {
