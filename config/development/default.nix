@@ -37,7 +37,10 @@
   vscode
 
   # Neovim
-  neovim vim gcc wl-clipboard fzf
+  neovim gcc wl-clipboard fzf
+  
+  # vim
+  # vim
 
   # Zed
   # zed-editor
@@ -55,6 +58,8 @@
   environment.sessionVariables = {
     LD_LIBRARY_PATH = "$NIX_LD_LIBRARY_PATH";
     PATH = "$HOME/.cargo/bin";
+    PYTHON_HISTORY = "$HOME/.local/share/python/history";
+    HISTFILE = "$HOME/.local/share/bash/history";
   };
 
 }
