@@ -4,7 +4,7 @@ MenuBar=Disabled
 ShowCopyMoveMenu=true
 
 [DetailsMode]
-PreviewSize=22
+PreviewSize=32
 
 [General]
 BrowseThroughArchives=true
