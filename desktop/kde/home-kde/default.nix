@@ -34,6 +34,6 @@ in
     ".config/Trolltech.conf".source = mkOutOfStore "${home-kde}/config/Trolltech.conf";    
   };
 
-  home.file.".gtkrc-2.0" = { source = mkOutOfStore "${home-kde}/.gtkrc-2.0"; force = true; };
+  # home.file.".gtkrc-2.0" = { source = mkOutOfStore "${home-kde}/.gtkrc-2.0"; force = true; };
 
 }
