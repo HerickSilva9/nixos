@@ -14,6 +14,7 @@
     ./gaming
     ./home-manager
     ./kitty
+    ./messenger
     ./multimedia
     ./office
     ./remote-desktop
