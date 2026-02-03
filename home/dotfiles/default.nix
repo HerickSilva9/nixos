@@ -28,7 +28,7 @@ in
   };
 
   imports = [
-    ../../desktop/kde/home-kde  # KDE Plasma
+    # ../../desktop/kde/home-kde  # KDE Plasma
   ];
 
 }

@@ -16,4 +16,5 @@ layout_uv() {
     fi
     export UV_ACTIVE=1  # or VENV_ACTIVE=1
     export VIRTUAL_ENV
+    log_status "using uv"
 }
