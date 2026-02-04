@@ -5,8 +5,8 @@
         ../configuration.nix
         ../audio
         ../core
-        ../config
         ../desktop/kde
+        ../modules
         ../virtualisation
     ];
 }
