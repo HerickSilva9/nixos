@@ -19,9 +19,7 @@
       pc = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
-          ./drivers/nvidia
-          ./hosts/pc/hardware-configuration.nix
+          ./hosts/pc
 
           home-manager.nixosModules.home-manager
           {
@@ -39,9 +37,7 @@
       laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
-          ./drivers/intel
-          ./hosts/laptop/hardware-configuration.nix
+          ./hosts/laptop
 
           home-manager.nixosModules.home-manager
           {

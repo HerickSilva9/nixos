@@ -5,13 +5,6 @@
 { lib, config, pkgs, ... }:
 
 {
-  imports = [
-      ./audio
-      ./core
-      ./config
-      ./desktop/kde
-      ./virtualisation
-    ];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
