@@ -28,7 +28,6 @@ in
   };
 
   imports = [
-    # ../../desktop/kde/home-kde  # KDE Plasma
   ];
 
 }
