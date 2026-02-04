@@ -8,10 +8,6 @@ let
 in
 
 {
-  
-  # xdg.configFile = {
-  #   # Isso cria ~/.config/nvim/init.vim
-  #   "nvim/init.vim".source = ./dotfiles/nvim/init.vim;
 
   # direnv
   xdg.configFile = {
