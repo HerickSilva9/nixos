@@ -11,16 +11,12 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    # The host with the name `nixos` will use this configuration
-    nixosConfigurations = {
-
-
-      pc = nixpkgs.lib.nixosSystem {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+    let
+      mkSystem = hostPath: nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/pc
-
+          hostPath
           home-manager.nixosModules.home-manager
           {
             home-manager = {
@@ -30,29 +26,15 @@
               backupFileExtension = "backup";
             };
           }
-
         ];
       };
+    in
 
-      laptop = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./hosts/laptop
-
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.herick = ./home/home.nix;
-              backupFileExtension = "backup";
-            };
-          }
-
-        ];
+    {
+      nixosConfigurations = {
+        pc = mkSystem ./hosts/pc;
+        laptop = mkSystem ./hosts/laptop;
       };
-
     };
-  };
-
+    
 }
