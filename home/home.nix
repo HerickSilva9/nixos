@@ -2,7 +2,10 @@
 
 {
 
-  imports = [ ./default.nix ];
+  imports = [ 
+    ./dotfiles
+    ./repositories.nix
+  ];
   
   home.username = "herick";
   home.homeDirectory = "/home/herick";
