@@ -5,15 +5,15 @@
 
   # Resolve temporariamente o bug que impede deade keys de funcionarem
   # Em futuras versões do gnome provavelmente o bug será corrigido
-  i18n.inputMethod = {
-    enable = true;
-    type = "ibus";
-    ibus.engines = with pkgs.ibus-engines; [
-      anthy
-      hangul
-      mozc
-    ];
-  };
+  # i18n.inputMethod = {
+  #   enable = true;
+  #   type = "ibus";
+  #   ibus.engines = with pkgs.ibus-engines; [
+  #     anthy
+  #     hangul
+  #     mozc
+  #   ];
+  # };
 
 
 

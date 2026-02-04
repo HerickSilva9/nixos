@@ -8,7 +8,6 @@
     efiSupport =  true;
     useOSProber = true;
     device = "nodev";
-    configurationName = "NixOS";
   };
   boot.loader.efi.canTouchEfiVariables = true;
 
