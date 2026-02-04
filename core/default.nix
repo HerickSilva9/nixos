@@ -16,4 +16,10 @@
     "quiet" "loglevel=3"
   ];
 
+  nix.gc = {
+    automatic = true;
+    dates = "daily";
+    persistent = true;
+  };
+
 }
