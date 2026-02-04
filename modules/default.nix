@@ -3,7 +3,6 @@
 {
   
   imports = [
-    # Diretórios
     # ./appimage
     ./browsers
     ./cli
