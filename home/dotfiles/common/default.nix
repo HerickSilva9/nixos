@@ -9,6 +9,9 @@ in
 
 {
 
+  # autostart
+  xdg.configFile."autostart".source = mkOutOfStore "${common}/autostart";
+
   # direnv
   xdg.configFile = {
     "direnv/direnvrc".source = mkOutOfStore "${common}/direnv/direnvrc";
