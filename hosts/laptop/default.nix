@@ -3,7 +3,7 @@
 {
     imports = [
         ../common.nix
-        ../../drivers/intel
+        ../../core/drivers/intel
         ./hardware-configuration.nix
     ];
 }

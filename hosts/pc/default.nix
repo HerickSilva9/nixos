@@ -3,7 +3,7 @@
 {
     imports = [
         ../common.nix
-        ../../drivers/nvidia
+        ../../core/drivers/nvidia
         ./hardware-configuration.nix
     ];
 }
