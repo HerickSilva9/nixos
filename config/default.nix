@@ -3,9 +3,10 @@
 {
   
   imports = [
-  # Diretórios
-  # ./appimage
+    # Diretórios
+    # ./appimage
     ./browsers
+    ./cli
     ./cloud-storage
     ./development
     ./flake
@@ -19,9 +20,6 @@
     ./office
     ./remote-desktop
     ./security
-
-    # Arquivos
-    ./common.nix
   ];
 
 }
