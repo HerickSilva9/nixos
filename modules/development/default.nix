@@ -14,7 +14,7 @@
   # (python313.withPackages (ps: with ps; [
   #   # tkinter pyqt5
   # ]))
-  # uv
+  uv
   # python3 python3Packages.tkinter
 
   # Rust
