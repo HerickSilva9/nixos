@@ -11,13 +11,13 @@ pkgs.callPackage (
 
   stdenv.mkDerivation {
     pname = "PlasmaZones";
-    version = "v1.3.2";
+    version = "v1.7.0";
 
     src = fetchFromGitHub {
       owner = "fuddlesworth";
       repo = "PlasmaZones";
-      rev = "v1.3.2";
-      sha256 = "sha256-5uli5/KTw0/Wwv1Z7x7BX6bpAduUeSUQlXosh+kznNQ=";
+      rev = "v1.7.0";
+      sha256 = "sha256-fqs11tv8ejRBszWKhNHo1lozI00lsk7aNdOBwqxCG5Y=";
     };
 
     nativeBuildInputs = [

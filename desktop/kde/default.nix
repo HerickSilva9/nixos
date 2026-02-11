@@ -3,7 +3,7 @@
 {
 
   imports = [ 
-    ./plasmazones
+    # ./plasmazones
   ];
 
   # Enable the KDE Plasma Desktop Environment.
