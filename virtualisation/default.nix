@@ -4,5 +4,6 @@
   imports = [
     ./docker
     ./podman
+    ./virt-manager
   ];
 }
