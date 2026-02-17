@@ -18,10 +18,10 @@
   # python3 python3Packages.tkinter
 
   # Rust
-  rustup
+  # rustup
 
   # Node.js
-  # nodePackages_latest.nodejs
+  # nodejs_24
   
 
   ## Build
@@ -57,9 +57,11 @@
  
   environment.sessionVariables = {
     LD_LIBRARY_PATH = "$NIX_LD_LIBRARY_PATH";
-    PATH = "$HOME/.cargo/bin";
+    PATH = "$HOME/.cargo/bin:$HOME/.local/bin";
     PYTHON_HISTORY = "$HOME/.local/share/python/history";
     HISTFILE = "$HOME/.local/share/bash/history";
   };
+  
+  # TODO criar pastas ~/.local/share/python e ~/.local/share/bash
 
 }
