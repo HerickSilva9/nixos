@@ -13,9 +13,9 @@ in
   xdg.configFile."autostart".source = mkOutOfStore "${common}/autostart";
 
   # direnv
-  xdg.configFile = {
-    "direnv/direnvrc".source = mkOutOfStore "${common}/direnv/direnvrc";
-  };
+  # xdg.configFile = {
+  #   "direnv/direnvrc".source = mkOutOfStore "${common}/direnv/direnvrc";
+  # };
 
   # Git
   home.file.".config/git/config".source = mkOutOfStore "${common}/git/config";
