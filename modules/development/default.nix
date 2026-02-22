@@ -18,7 +18,7 @@
   # python3 python3Packages.tkinter
 
   # Rust
-  # rustup
+  rustup
 
   # Node.js
   # nodejs_24
@@ -62,6 +62,11 @@
     HISTFILE = "$HOME/.local/share/bash/history";
   };
   
-  # TODO criar pastas ~/.local/share/python e ~/.local/share/bash
+  systemd.tmpfiles.rules = [
+    "d /home/herick/.local/share/bash 0700 herick users -"
+    "f /home/herick/.local/share/bash/history 0600 herick users -"
+    "d /home/herick/.local/share/python 0700 herick users -"
+    "f /home/herick/.local/share/python/history 0600 herick users -"
+  ];
 
 }
