@@ -3,7 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
-    seafile-client
+    # seafile-client
   ];
 
 }

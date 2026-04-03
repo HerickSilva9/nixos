@@ -13,4 +13,9 @@
   #  material-design-icons
   ];
 
+  environment.systemPackages = with pkgs; [
+    vista-fonts
+    carlito
+  ];
+
 }
