@@ -8,12 +8,14 @@
     ./cli
     ./cloud-storage
     ./development
+    ./files
     ./flake
     ./flatpak
     ./fonts
     ./gaming
     ./home-manager
     ./kitty
+    ./klassy
     ./messenger
     ./multimedia
     ./office

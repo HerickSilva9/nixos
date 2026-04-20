@@ -48,6 +48,9 @@
   # IDE for writing GNOME-based software
   # gnome-builder
 
+  # openssl
+  # pkg-config
+
   ];
 
   ## Development environments
